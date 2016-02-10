@@ -1,7 +1,7 @@
 {
   "name": "ember-todo",
-  "version": "0.0.0",
-  "description": "Small description for ember-todo goes here",
+  "version": "1.0.0",
+  "description": "emberjs study project",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -18,6 +18,10 @@
   },
   "author": "",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paseo/ember-todo/issues"
+  },
+  "homepage": "https://github.com/paseo/ember-todo#readme",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.7.1",

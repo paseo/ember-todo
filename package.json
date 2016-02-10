@@ -1,0 +1,19 @@
+{
+  "name": "ember-todo",
+  "version": "1.0.0",
+  "description": "emberjs study project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paseo/ember-todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paseo/ember-todo/issues"
+  },
+  "homepage": "https://github.com/paseo/ember-todo#readme"
+}

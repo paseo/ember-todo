@@ -5,7 +5,11 @@ module.exports = function(app) {
 
   todosRouter.get('/', function(req, res) {
     res.send({
-      'todos': []
+      'todos': [{
+        id: 123,
+        title: 'todo1',
+        isCompleted: false
+      }]
     });
   });
 

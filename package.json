@@ -45,5 +45,6 @@
     "glob": "^4.5.3",
     "loader.js": "^4.0.0",
     "morgan": "^1.6.1"
-  }
+  },
+  "dependencies": {}
 }

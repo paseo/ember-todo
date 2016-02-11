@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+	classNames:['list-group-item'],
 	isEditing: false,
 	store: Ember.inject.service(),
 	actions:{

@@ -2,3 +2,12 @@
 .completed {
 	text-decoration: line-through;
 }
+
+
+.todo-list {
+	width: 768px;
+}
+
+.todo-list header {
+	margin-bottom: 10px;
+}

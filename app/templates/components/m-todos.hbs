@@ -1,0 +1,11 @@
+<ul class="todos list-unstyled">
+	<li>
+		{{input class="form-control im" placeholder="输入代办内容,按Enter或点击添加按钮" enter="enter"}}
+
+		<button type="button" class="btn btn-default" {{action "enter" on="click"}}>添加</button>
+	</li>
+
+	{{#each items as |item| }}
+		{{m-todo model=item}}
+	{{/each}}
+</ul>

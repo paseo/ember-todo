@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('all', {paths:'/'});
+  this.route('undo');
+  this.route('done');
+  this.route('trash');
 });
 
 export default Router;

@@ -25,7 +25,7 @@ export default Ember.Component.extend({
 			this.set('isEditing', false)
 		},
 		editTodo(todo) {
-			this.set('buferedTittle',this.get('title'));
+			this.set('buferedTittle',this.get('record.title'));
 			this.set('isEditing', true);
 		},
 		removeTodo(todo) {

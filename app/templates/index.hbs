@@ -1,1 +1,12 @@
-{{m-todos items=model}}
+<div id="todoapp" class="center-block">
+	<header>
+		<h1>代办列表</h1>
+		{{m-add-todo}}
+	</header>
+
+	<ul class="todo-list list-unstyled">
+		{{#each model as |item| }}
+			{{m-todo record=item}}
+		{{/each}}
+	</ul>
+</div>

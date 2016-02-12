@@ -4,10 +4,10 @@
 }
 
 
-.todo-list {
+#todoapp {
 	width: 768px;
 }
 
-.todo-list header {
+#todoapp > header {
 	margin-bottom: 10px;
 }

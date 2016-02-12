@@ -2,7 +2,7 @@
   {{input type="text" class="edit" value=buferedTittle focus-out="doneEditing" enter="doneEditing" escape-press="cancelEditing"}}
 {{else}}
     <input type="checkbox" class="toggle" checked={{isCompleted}} {{action "toggleComplete" on="change"}}>
-  <label class="{{if isCompleted 'completed'}}" {{action "editTodo" record on="doubleClick"}}>{{title}}</label>
+  <label class="{{if isCompleted 'completed'}}" {{action "editTodo" record on="doubleClick"}}>{{record.title}}</label>
 
   <button type="button" class="close" {{action 'removeTodo' record}} aria-label="Close"><span aria-hidden="true">&times;</span></button>
 

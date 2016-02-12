@@ -10,8 +10,6 @@ export default Ember.Component.extend({
 			const $checkbox = this.$('.toggle');
 			const checked = $checkbox.prop('checked')
 
-			console.log('toggleComplete', checked)
-
 			todo.set('isCompleted', checked);
 		},
 		doneEditing() {

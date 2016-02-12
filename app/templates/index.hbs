@@ -6,7 +6,7 @@
 
 	<ul class="todo-list list-unstyled">
 		{{#each model as |item| }}
-			{{m-todo record=item}}
+			{{m-todo record=item removeTodo=(action 'abc' item)}}
 		{{/each}}
 	</ul>
 </div>

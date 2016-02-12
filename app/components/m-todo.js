@@ -20,22 +20,25 @@ export default Ember.Component.extend({
 		},
 		doneEditing() {
 			const todo = this.get('record');
-			var bufer = this.$('.edit').val();
+			const bufer = this.get('buferedTitle');
 			if(bufer) {
 				todo.set('title',bufer);
-				// this.set('title', bufer);
 			}
-			this.set('isEditing', false);
+
+			this.send('cancelEditing');
 		},
 		cancelEditing() {
 			this.set('isEditing', false)
 		},
-		editTodo(todo) {
-			this.set('buferedTittle',this.get('record.title'));
+		editTodo() {
+			const bufer = this.get('buferedTitle');
+			if(!bufer) {
+				this.set('buferedTitle', this.get('record.title'));
+			}
 			this.set('isEditing', true);
 		},
-		removeTodo(todo) {
-			todo.destroyRecord();
+		removeTodoo() {
+			this.get('record').destroyRecord();
 		}
 	}
 });
